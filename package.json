@@ -1,0 +1,22 @@
+{
+  "name": "bikeservicing",
+  "version": "1.0.0",
+  "description": "agile development bike servicig",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manitamewahang05/AD-bike-servicing.git"
+  },
+  "author": "Manita Mewahang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manitamewahang05/AD-bike-servicing/issues"
+  },
+  "homepage": "https://github.com/manitamewahang05/AD-bike-servicing#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
