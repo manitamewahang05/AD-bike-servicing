@@ -9,8 +9,10 @@ const UserDetailsModel = require("../models/UserDetails.model");
 describe("USER REGESTRATOIN : POST/", () => {
     describe("USER CREDENTIALS", () => {
         beforeEach(function(done) {
+            this.timeout(9000);
             users.deleteMany({}, (err) => {
-                if (err) return done(err);
+              if (err) return done(err);
+                
                 done();
 
             })
@@ -177,8 +179,10 @@ describe("USER REGESTRATOIN : POST/", () => {
 
     describe("SAVE USER TO DATABASE", () => {
         beforeEach(function(done) {
+            this.timeout(9000);
             users.deleteMany({}, (err) => {
-                if (err) return done(err);
+               if (err) return done(err);
+               
                 done();
 
             })
