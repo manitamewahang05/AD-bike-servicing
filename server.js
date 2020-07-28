@@ -3,7 +3,7 @@ const cors = require("cors");
 const mongoose = require("mongoose");
 const app = express();
 const path = require('path');
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 //Middleware
 app.use(cors());
