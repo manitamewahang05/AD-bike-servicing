@@ -45,7 +45,9 @@ describe("USERPROFILE", () => {
             );
             // console.log(token);
             var res = await request(app).get("/profile/user", user).set('x-auth-token', token);
-            console.log(res.body);
+            //   console.log(res.body);
+            expect(res.status).equal(200);
+            expect(res.body).to.be.an("object");
 
         });
 
@@ -78,7 +80,9 @@ describe("USERPROFILE", () => {
             });
 
             const res = await request(app).post("/profile/update/" + user._id).send(user2);
-            console.log(res.body);
+            // console.log(res.body);
+            expect(res.status).equal(200);
+            expect(res.body).to.be.an("object");
 
         })
     });
