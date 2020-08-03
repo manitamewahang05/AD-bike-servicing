@@ -26,10 +26,15 @@ connection.once("open", () => {
 
 //Require and Use routes created
 const userRegisterRoute = require("./routes/userRoutes/userRegister");
+const login = require("./routes/userRoutes/LoginAndAuth");
 
 
 
 app.use("/register", userRegisterRoute);
+app.use("/auth", login);
+
+
+
 
 
 // listen to port
