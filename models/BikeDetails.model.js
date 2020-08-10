@@ -21,10 +21,6 @@ const BikeDetailsSchema = new Schema({
         required:true,
     },
     
-bikestatus:{
-     type:String,
-     required:true
-},
 
 }, {
     timestamps: true
