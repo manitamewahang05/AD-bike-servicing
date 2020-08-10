@@ -5,7 +5,7 @@ const BikeDetailsSchema = new Schema({
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'UserDetails',
-        required: true
+        required: false,
     },
     bikeModel: {
         type: mongoose.Schema.Types.ObjectId,
