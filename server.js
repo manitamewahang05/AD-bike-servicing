@@ -32,6 +32,7 @@ const login = require("./routes/userRoutes/LoginAndAuth");
 
 app.use("/register", userRegisterRoute);
 app.use("/auth", login);
+// app.use("/bikedetails",require("./"))
 
 
 
